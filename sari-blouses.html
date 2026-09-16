@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sari Blouses | Maa Laxmi Women's Tailoring Shop</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fffaf3;
+    color: #3b1f1f;
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+header {
+    background: #5a1020;
+    padding: 18px 0;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #f5d28c;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.back-home {
+    color: white;
+    text-decoration: none;
+    border: 1px solid #f5d28c;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    background: #f8eee3;
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 58px;
+    color: #5a1020;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.hero-image {
+    width: 50%;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 430px;
+    height: 400px;
+    object-fit: contain;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    margin: 5px;
+    font-weight: 500;
+}
+
+.button-gold {
+    background: #c89b3c;
+    color: white;
+}
+
+.button-light {
+    background: white;
+    color: #5a1020;
+    border: 1px solid #5a1020;
+}
+
+section {
+    padding: 70px 0;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 42px;
+    color: #5a1020;
+}
+
+.section-heading p {
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+.about {
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+}
+
+.features {
+    background: #f8eee3;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+.feature-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    color: #5a1020;
+    margin-bottom: 10px;
+}
+
+.process {
+    text-align: center;
+}
+
+.process-list {
+    max-width: 750px;
+    margin: auto;
+    text-align: left;
+}
+
+.process-item {
+    margin-bottom: 22px;
+}
+
+.process-item h3 {
+    color: #5a1020;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+}
+
+.contact {
+    background: #5a1020;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 42px;
+    color: #f5d28c;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #3b0914;
+    color: #ddd;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 800px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .hero-content,
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .header-inner {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container header-inner">
+
+        <div class="logo">
+            Maa Laxmi Tailoring
+        </div>
+
+        <a href="index.html" class="back-home">
+            ← Back to Home
+        </a>
+
+    </div>
+</header>
+
+
+<section class="hero">
+
+    <div class="container" style="display:flex; align-items:center; gap:40px;">
+
+        <div class="hero-content">
+
+            <h1>Sari Blouses</h1>
+
+            <p>
+                Beautifully stitched sari blouses with custom fitting,
+                elegant designs, and neat finishing for every occasion.
+            </p>
+
+            <a href="https://wa.me/917615966033?text=Namaste%20Maa%20Laxmi%20Women's%20Tailoring%20Shop%2C%20I%20would%20like%20to%20enquire%20about%20Sari%20Blouses."
+               class="button button-gold"
+               target="_blank"
+               rel="noopener">
+                💬 WhatsApp Us
+            </a>
+
+            <a href="tel:+917615966033" class="button button-light">
+                📞 Call Now
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="images/blouse.jpg" alt="Sari Blouse">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>About Our Sari Blouse Stitching</h2>
+
+            <p>
+                We stitch sari blouses according to your measurements,
+                preferred design, fabric, neckline, sleeves, and fitting
+                requirements. Every blouse is finished with attention to
+                detail and comfort.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="features">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>What We Offer</h2>
+
+            <p>
+                Custom blouse stitching for traditional, festive,
+                wedding, and everyday wear.
+            </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <h3>Custom Measurements</h3>
+                <p>
+                    Blouses stitched according to your individual
+                    measurements for a comfortable fit.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <h3>Neckline Designs</h3>
+                <p>
+                    Choose from different neckline styles according
+                    to your preference and occasion.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <h3>Sleeve Styles</h3>
+                <p>
+                    Different sleeve lengths and styles can be
+                    customised according to your requirements.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <h3>Perfect Fitting</h3>
+                <p>
+                    Careful stitching and fitting adjustments for
+                    a neat and comfortable finish.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <h3>Traditional Designs</h3>
+                <p>
+                    Elegant traditional blouse designs suitable
+                    for sarees and cultural occasions.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <h3>Wedding & Festive Wear</h3>
+                <p>
+                    Special blouse stitching for weddings,
+                    festivals, functions, and celebrations.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="process">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>Our Stitching Process</h2>
+
+            <p>
+                Simple and personalised from measurement to final fitting.
+            </p>
+
+        </div>
+
+
+        <div class="process-list">
+
+            <div class="process-item">
+
+                <h3>1. Discuss Your Design</h3>
+
+                <p>
+                    Tell us your preferred blouse design, neckline,
+                    sleeves, and finishing style.
+                </p>
+
+            </div>
+
+
+            <div class="process-item">
+
+                <h3>2. Take Measurements</h3>
+
+                <p>
+                    Measurements are taken carefully according to
+                    your required fitting.
+                </p>
+
+            </div>
+
+
+            <div class="process-item">
+
+                <h3>3. Stitching</h3>
+
+                <p>
+                    Your blouse is stitched with attention to
+                    fitting and finishing.
+                </p>
+
+            </div>
+
+
+            <div class="process-item">
+
+                <h3>4. Final Fitting</h3>
+
+                <p>
+                    The blouse is checked and adjusted if required
+                    before the final delivery.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="contact">
+
+    <div class="container">
+
+        <h2>Ready to Get Your Blouse Stitched?</h2>
+
+        <p>
+            Contact Maa Laxmi Women's Tailoring Shop today.
+        </p>
+
+        <br>
+
+        <a href="https://wa.me/917615966033?text=Namaste%20Maa%20Laxmi%20Women's%20Tailoring%20Shop%2C%20I%20would%20like%20to%20enquire%20about%20Sari%20Blouses."
+           class="button button-gold"
+           target="_blank"
+           rel="noopener">
+            💬 WhatsApp Us
+        </a>
+
+        <a href="tel:+917615966033" class="button button-light">
+            📞 Call Now
+        </a>
+
+        <a href="index.html#contact" class="button button-light">
+            Contact Us
+        </a>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    © 2026 Maa Laxmi Women's Tailoring Shop.
+    All Rights Reserved.
+
+</footer>
+
+</body>
+</html>

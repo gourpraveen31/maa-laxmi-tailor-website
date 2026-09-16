@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rajputi Suits tailoring and custom stitching by Maa Laxmi Women's Tailoring Shop, Pali.">
+
+    <title>Rajputi Suits | Maa Laxmi Women's Tailoring Shop</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap');
+
+        :root {
+            --maroon: #741f2b;
+            --dark-maroon: #45121b;
+            --gold: #d6a34a;
+            --cream: #fff8eb;
+            --light-cream: #fffdf7;
+            --text: #3b1f14;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text);
+            background: var(--cream);
+            line-height: 1.7;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* NAVIGATION */
+        header {
+            background: var(--maroon);
+            padding: 16px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            text-decoration: none;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .logo span {
+            display: block;
+            font-family: 'Poppins', sans-serif;
+            font-size: 10px;
+            letter-spacing: 2px;
+            font-weight: 500;
+        }
+
+        .back-home {
+            color: white;
+            text-decoration: none;
+            border: 1px solid var(--gold);
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .back-home:hover {
+            background: var(--gold);
+            color: var(--dark-maroon);
+        }
+
+        /* HERO */
+        .hero {
+            padding: 75px 0 55px;
+            text-align: center;
+            background:
+                linear-gradient(rgba(255, 248, 235, 0.88), rgba(255, 248, 235, 0.88)),
+                url("images/rajputi-suit.jpg") center/cover;
+        }
+
+        .eyebrow {
+            color: var(--gold);
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            color: var(--maroon);
+            font-size: 58px;
+            line-height: 1.1;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 750px;
+            margin: auto;
+            font-size: 17px;
+        }
+
+        /* CONTENT */
+        .section {
+            padding: 55px 0;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .section-heading h2 {
+            font-family: 'Cormorant Garamond', serif;
+            color: var(--maroon);
+            font-size: 40px;
+        }
+
+        .content-box {
+            background: var(--light-cream);
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #e8d1aa;
+            margin-bottom: 25px;
+        }
+
+        .content-box h3 {
+            font-family: 'Cormorant Garamond', serif;
+            color: var(--maroon);
+            font-size: 29px;
+            margin-bottom: 10px;
+        }
+
+        .content-box p {
+            margin-bottom: 12px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .feature {
+            background: white;
+            padding: 22px;
+            border-radius: 8px;
+            border: 1px solid #ead8bb;
+        }
+
+        .feature h3 {
+            color: var(--maroon);
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 25px;
+            margin-bottom: 6px;
+        }
+
+        /* PHOTO */
+        .main-photo {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .main-photo img {
+            width: 100%;
+            max-width: 650px;
+            height: 430px;
+            object-fit: contain;
+            background: white;
+            border-radius: 10px;
+            border: 1px solid #e8d1aa;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: var(--dark-maroon);
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        .contact h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+
+        .contact p {
+            max-width: 650px;
+            margin: 0 auto 22px;
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-block;
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+
+        .button-gold {
+            background: var(--gold);
+            color: var(--dark-maroon);
+        }
+
+        .button-light {
+            background: white;
+            color: var(--maroon);
+        }
+
+        footer {
+            background: #2d0c12;
+            color: #ead8bb;
+            text-align: center;
+            padding: 18px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 700px) {
+            h1 {
+                font-size: 44px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .navbar {
+                gap: 15px;
+            }
+
+            .logo {
+                font-size: 25px;
+            }
+
+            .main-photo img {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <div class="container navbar">
+
+            <a href="index.html" class="logo">
+                Maa Laxmi
+                <span>WOMEN'S TAILORING SHOP</span>
+            </a>
+
+            <a href="index.html" class="back-home">
+                ← Back to Home
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="eyebrow">Our Tailoring Service</div>
+
+            <h1>Rajputi Suits</h1>
+
+            <p>
+                Traditional Rajasthani elegance with carefully tailored
+                designs, comfortable fitting, and attention to detail.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <div class="eyebrow">About The Style</div>
+                <h2>Rajputi Suits</h2>
+            </div>
+
+            <div class="content-box">
+
+                <h3>Traditional Elegance, Custom Tailored</h3>
+
+                <p>
+                    Rajputi suits are known for their graceful traditional
+                    appearance, rich colours, elegant silhouettes, and
+                    beautiful Rajasthani styling.
+                </p>
+
+                <p>
+                    At Maa Laxmi Women's Tailoring Shop, we stitch Rajputi
+                    suits according to your preferred design, measurements,
+                    fabric, colour, and occasion.
+                </p>
+
+                <p>
+                    Whether you want a traditional look or a more modern
+                    interpretation, we focus on neat stitching and a
+                    comfortable fit.
+                </p>
+
+            </div>
+
+
+            <!-- PHOTO -->
+            <div class="main-photo">
+                <img src="images/rajputi-suit.jpg" alt="Rajputi Suit">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <div class="eyebrow">What We Provide</div>
+                <h2>Our Rajputi Suit Tailoring</h2>
+            </div>
+
+            <div class="features">
+
+                <div class="feature">
+                    <h3>Custom Measurements</h3>
+                    <p>
+                        Suits are stitched according to your measurements
+                        and preferred fitting.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>Traditional Designs</h3>
+                    <p>
+                        Choose traditional Rajasthani-inspired patterns
+                        and styling according to your preference.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>Colour & Fabric Choice</h3>
+                    <p>
+                        Select the fabric, colour, and overall appearance
+                        that suits your occasion and personal style.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>Neat Finishing</h3>
+                    <p>
+                        Careful stitching and finishing are given attention
+                        to create a clean and comfortable garment.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>Occasion Wear</h3>
+                    <p>
+                        Rajputi suits can be tailored for festivals,
+                        family functions, celebrations, and other occasions.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>Personalised Design</h3>
+                    <p>
+                        Discuss your preferred neckline, sleeves, length,
+                        detailing, and other design requirements.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROCESS -->
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <div class="eyebrow">Our Approach</div>
+                <h2>From Measurement to Finishing</h2>
+            </div>
+
+            <div class="content-box">
+
+                <p>
+                    <strong>1. Discuss the design:</strong>
+                    We understand your preferred style, fabric, colour,
+                    and occasion.
+                </p>
+
+                <p>
+                    <strong>2. Take measurements:</strong>
+                    Measurements are taken according to the required
+                    garment and fitting.
+                </p>
+
+                <p>
+                    <strong>3. Stitching:</strong>
+                    The garment is stitched according to the selected
+                    design and measurements.
+                </p>
+
+                <p>
+                    <strong>4. Finishing:</strong>
+                    The final garment is checked for fitting, finishing,
+                    and overall appearance.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact">
+
+        <div class="container">
+
+            <h2>Want a Rajputi Suit Tailored?</h2>
+
+            <p>
+                Contact Maa Laxmi Women's Tailoring Shop to discuss your
+                design, measurements, fabric, and tailoring requirements.
+            </p>
+
+            <div class="contact-buttons">
+
+    <a href="https://wa.me/917615966033?text=Namaste%20Maa%20Laxmi%20Women's%20Tailoring%20Shop%2C%20I%20would%20like%20to%20enquire%20about%20Rajputi%20Suits."
+       class="button button-gold"
+       target="_blank"
+       rel="noopener">
+        💬 WhatsApp Us
+    </a>
+
+    <a href="tel:+917615966033" class="button button-light">
+        📞 Call Now
+    </a>
+
+    <a href="index.html#contact" class="button button-light">
+        Contact Us
+    </a>
+
+</div>
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Maa Laxmi Women's Tailoring Shop · Pali, Rajasthan
+    </footer>
+
+</body>
+</html>
