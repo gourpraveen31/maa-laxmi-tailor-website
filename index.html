@@ -205,7 +205,6 @@ max-width: 650px;
 margin: 0 auto 40px;
 }
 
-:
 .section-heading h2 {
 font-size: 46px;
 color: var(--maroon);
@@ -314,9 +313,11 @@ font-size: 14px;
 
 /* Gallery */
 .gallery-grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 18px;
+    display: grid;
+    grid-template-columns: repeat(3,
+minmax(0, 1fr));
+    gap: 18px;
+    align-items: column;
 }
 
 .gallery-item {
@@ -324,12 +325,16 @@ overflow: hidden;
 border-radius: 8px;
 background: var(--light-cream);
 border: 1px solid #e8d1aa;
+display: flex;
+flex-direction:column;
 }
 
 .gallery-item img {
-height: 240px;
-object-fit: contain;
-transition: transform 0.3s;
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    display:block;
+    transition: transform 0.3s;
 }
 
 .gallery-item:hover img {
@@ -424,7 +429,6 @@ color: var(--maroon);
 color: var(--muted);
 }
 
-:
 .contact-card {
 background: var(--light-cream);
 padding: 35px;
@@ -636,7 +640,6 @@ custom stitching, and elegant ladies' wear in Karni Nagar, Pali.
 <div class="eyebrow">Our Story</div>
 <h2>Stitching Tradition with Love</h2>
 
-:
 <p>
 At Maa Laxmi Women's Tailoring Shop, we believe every woman
 deserves an outfit that makes her feel beautiful and confident.
@@ -770,7 +773,6 @@ loading="lazy">
 <div class="gallery-caption">Beautiful Fabrics</div>
 </article>
 
-:
 <article class="gallery-item">
 <img
 src="images/custom-ladies.jpg"
@@ -893,7 +895,6 @@ rel="noopener">
 💬 WhatsApp Us
 </a>
 
-:
 <a
 class="btn btn-outline"
 href="tel:+917615966033">
