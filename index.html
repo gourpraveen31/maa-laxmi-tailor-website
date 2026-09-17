@@ -600,6 +600,375 @@ cursor: pointer;
 .service-link .service-card:hover {
 transform: translateY(-5px);
 }
+/* =========================
+   CUSTOMER REVIEWS
+========================= */
+
+.reviews {
+    background: var(--light-cream);
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.review-card {
+    background: var(--cream);
+    border: 1px solid #e8d1aa;
+    border-radius: 8px;
+    padding: 28px 24px;
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(69, 18, 27, 0.10);
+}
+
+.review-stars {
+    color: var(--gold);
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.review-text {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 22px;
+    font-style: italic;
+}
+
+.review-name {
+    color: var(--maroon);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.review-service {
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.review-note {
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+
+/* =========================
+   MEASUREMENT GUIDE
+========================= */
+
+.measurement-guide {
+    background: var(--cream);
+}
+
+.measurement-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.measurement-card {
+    background: var(--light-cream);
+    border: 1px solid #e8d1aa;
+    border-radius: 8px;
+    padding: 28px 20px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.measurement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(69, 18, 27, 0.10);
+}
+
+.measurement-icon {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.measurement-card h3 {
+    color: var(--maroon);
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.measurement-card p {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.measurement-card ul {
+    list-style: none;
+    text-align: left;
+    color: var(--text);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.measurement-card li::before {
+    content: "✦ ";
+    color: var(--gold);
+}
+
+.measurement-help {
+    margin-top: 35px;
+    background: var(--dark-maroon);
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.measurement-help h3 {
+    color: #f4ce7c;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.measurement-help p {
+    color: #e7cfc4;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.measurement-help .btn {
+    margin: 0;
+}
+
+
+/* =========================
+   REVIEWS + MEASUREMENT
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .reviews-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .measurement-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .reviews-grid,
+    .measurement-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .review-card,
+    .measurement-card {
+        padding: 25px 20px;
+    }
+
+    .measurement-help {
+        padding: 25px 18px;
+    }
+}
+.measurement-icon img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+.measure-tip {
+    margin-top: 18px;
+    padding: 12px;
+    background: #fff8eb;
+    border-left: 3px solid var(--gold);
+    text-align: left;
+    font-size: 12px;
+    color: var(--muted);
+    border-radius: 4px;
+}
+
+.measure-tip strong {
+    color: var(--maroon);
+}
+/* =========================
+   SMART ENQUIRY FORM
+========================= */
+
+.enquiry {
+  background: var(--cream);
+}
+
+.enquiry-form {
+  max-width: 850px;
+  margin: 0 auto;
+  background: var(--white);
+  padding: 32px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(69, 18, 27, 0.10);
+  border: 1px solid rgba(116, 31, 43, 0.10);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: var(--dark-maroon);
+  margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d8c6b5;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: var(--text);
+  background: #fffdf9;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(214, 163, 74, 0.12);
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-note {
+  margin: 20px 0;
+  padding: 14px 16px;
+  background: var(--light-cream);
+  border-left: 4px solid var(--gold);
+  border-radius: 8px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.enquiry-submit {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.enquiry-submit .btn {
+  border: none;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 700px) {
+  .enquiry-form {
+    padding: 22px 16px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group.full-width {
+    grid-column: auto;
+  }
+}
+.measurement-buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+@media(max-width:600px){
+
+    .measurement-buttons{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .measurement-buttons .btn{
+        width:100%;
+        max-width:300px;
+        text-align:center;
+    }
+
+}
+/* =========================
+   GOOGLE MAP + CONTACT
+========================= */
+
+.map-box {
+    margin-top: 22px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid #e2c99f;
+}
+
+.map-box iframe {
+    display: block;
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+.directions-btn {
+    margin-top: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+    .map-box iframe {
+        height: 280px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .map-box {
+        margin-top: 18px;
+        border-radius: 10px;
+    }
+
+    .map-box iframe {
+        height: 260px;
+    }
+
+    .directions-btn {
+        width: 100%;
+    }
+}
 </style>
 </head>
 
@@ -622,6 +991,8 @@ Maa Laxmi
 <a href="#about">About</a>
 <a href="#services">Services</a>
 <a href="#gallery">Our Work</a>
+<a href="#reviews">Reviews</a>
+<a href="#measurements">Measurements</a>
 <a href="#contact">Contact</a>
 </nav>
 </div>
@@ -913,66 +1284,426 @@ We care about every detail of your outfit.
 </div>
 </div>
 </section>
+<!-- CUSTOMER REVIEWS -->
+<section class="reviews" id="reviews">
+<div class="container">
 
-<!-- CONTACT -->
-<section id="contact">
-<div class="container contact-grid">
-<div class="contact-info">
-<div class="eyebrow">Get in Touch</div>
-<h2>Let's Create Your Dream Outfit</h2>
-
+<div class="section-heading">
+<div class="eyebrow">What Our Customers Say</div>
+<h2>Customer Reviews</h2>
 <p>
-Have a design in mind? Contact Maa Laxmi Women's Tailoring Shop
-to discuss your stitching requirements.
+We value every customer and every piece we stitch.
+</p>
+</div>
+
+<div class="reviews-grid">
+
+<article class="review-card">
+
+<div class="review-stars">★★★★★</div>
+
+<p class="review-text">
+“Beautiful stitching and a comfortable fit. I really liked the
+attention given to the design I requested.”
 </p>
 
-<div class="contact-detail">
-<div class="icon">📍</div>
-<div>
-<strong>Shop Address</strong>
-<p>Karni Nagar, Pali, Rajasthan</p>
-</div>
-</div>
+<div class="review-name">Your Customer's Name</div>
+<div class="review-service">Rajputi Suit</div>
 
-<div class="contact-detail">
-<div class="icon">📞</div>
-<div>
-<strong>Phone / WhatsApp</strong>
-<p>7615966033</p>
-</div>
-</div>
+</article>
 
-<div class="contact-detail">
-<div class="icon">🕒</div>
-<div>
-<strong>Opening Hours</strong>
-<p>Monday to Sunday: 9:00 AM – 8:00 PM.</p>
-</div>
-</div>
-</div>
 
-<div class="contact-card">
-<h3>Contact Us</h3>
-<p>
-Send us your dress design or ask about stitching,
-fitting, and availability.
+<article class="review-card">
+
+<div class="review-stars">★★★★★</div>
+
+<p class="review-text">
+“The finishing was neat and the outfit was stitched according
+to my measurements. Very happy with the result.”
 </p>
+
+<div class="review-name">Your Customer's Name</div>
+<div class="review-service">Blouse Stitching</div>
+
+</article>
+
+
+<article class="review-card">
+
+<div class="review-stars">★★★★★</div>
+
+<p class="review-text">
+“I wanted a traditional design and the final outfit turned out
+beautiful. The fitting was exactly what I wanted.”
+</p>
+
+<div class="review-name">Your Customer's Name</div>
+<div class="review-service">Traditional Poshak</div>
+
+</article>
+
+</div>
+
+<p class="review-note">
+These sample reviews should be replaced with feedback from real customers.
+</p>
+
+<div style="text-align:center; margin-top:22px;">
 
 <a
 class="btn"
-href="https://wa.me/917615966033?text=Namaste%20Maa%20Laxmi%20Women's%20Tailoring%20Shop%2C%20I%20would%20like%20to%20enquire%20about%20stitching."
+href="https://wa.me/917615966033?text=Namaste%20Maa%20Laxmi%20Tailoring%20Shop%2C%20I%20would%20like%20to%20share%20my%20feedback%20about%20your%20stitching."
 target="_blank"
 rel="noopener">
-💬 WhatsApp Us
+⭐ Share Your Experience
 </a>
 
-<a
-class="btn btn-outline"
-href="tel:+917615966033">
-📞 Call Now
-</a>
+</div>
+
+</div>
+</section>
+<!-- MEASUREMENT GUIDE -->
+<section class="measurement-guide" id="measurements">
+<div class="container">
+
+<div class="section-heading">
+<div class="eyebrow">Perfect Fit Starts Here</div>
+<h2>📏 Measurement Guide</h2>
+<p>
+Not sure what measurements are needed? Here's a simple guide
+for different types of women's clothing.
+</p>
+</div>
+
+
+<div class="measurement-grid">
+
+<!-- BLOUSE -->
+
+<article class="measurement-card">
+
+<div class="measurement-icon">
+    <img src="images/blouse.jpg" alt="Blouse">
+</div>
+
+<h3>Blouse</h3>
+
+<p>
+Important measurements commonly needed for blouse stitching:
+</p>
+
+<ul>
+<li>Full bust</li>
+<li>Under bust</li>
+<li>Shoulder</li>
+<li>Armhole</li>
+<li>Sleeve length</li>
+<li>Blouse length</li>
+</ul>
+
+<div class="measure-tip">
+<strong>💡 Tip:</strong>
+Keep the measuring tape comfortably fitted around the body.
+Do not pull it too tight.
+</div>
+</article>
+
+
+<!-- SALWAR SUIT -->
+
+<article class="measurement-card">
+
+<div class="measurement-icon">
+    <img src="images/salwar-suit.jpg" alt="Salwar Suit">
+</div>
+
+<h3>Salwar Suit</h3>
+
+<p>
+Measurements commonly required for a comfortable custom fit:
+</p>
+
+<ul>
+<li>Shoulder</li>
+<li>Bust</li>
+<li>Waist</li>
+<li>Hip</li>
+<li>Kurti length</li>
+<li>Salwar/Pant length</li>
+</ul>
+
+</article>
+
+
+<!-- POSHAK -->
+
+<article class="measurement-card">
+
+<div class="measurement-icon">
+    <img src="images/traditional-poshak.jpg" alt="Poshak">
+</div>
+
+<h3>Poshak</h3>
+
+<p>
+For traditional Rajasthani outfits, measurements may include:
+</p>
+
+<ul>
+<li>Blouse measurements</li>
+<li>Waist</li>
+<li>Skirt/Ghagra length</li>
+<li>Waist circumference</li>
+<li>Dupatta preferences</li>
+<li>Required fitting</li>
+</ul>
+
+</article>
+
+
+<!-- BRIDAL -->
+
+<article class="measurement-card">
+
+<div class="measurement-icon"><img src="images/bridal-wear.jpg" alt="Bridal Wear"></div>
+
+<h3>Bridal Wear</h3>
+
+<p>
+Bridal outfits may require additional measurements and fitting:
+</p>
+
+<ul>
+<li>Detailed body measurements</li>
+<li>Blouse fitting</li>
+<li>Waist measurement</li>
+<li>Length measurements</li>
+<li>Sleeve preferences</li>
+<li>Trial fitting</li>
+</ul>
+
+</article>
+
+</div>
+
+
+<!-- HELP BOX -->
+
+<div class="measurement-help">
+
+<h3>Not Sure How to Take Your Measurements?</h3>
+
+<p>
+Don't worry. Contact Maa Laxmi Tailoring Shop and we can
+guide you about the measurements required for your outfit.
+</p>
+
+<div class="measurement-buttons">
+
+    <a
+    class="btn"
+    href="https://wa.me/917615966033?text=Namaste%20Maa%20Laxmi%20Tailoring%20Shop%2C%20I%20need%20help%20with%20taking%20measurements%20for%20my%20outfit."
+    target="_blank"
+    rel="noopener">
+    💬 Ask on WhatsApp
+    </a>
+
+    <a
+    class="btn"
+    href="measurement-guide.html">
+    📏 View Detailed Guide
+    </a>
+
 </div>
 </div>
+
+</div>
+</section>
+<!-- SMART ENQUIRY -->
+<section class="enquiry" id="enquiry">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="eyebrow">Quick & Easy</div>
+      <h2>📝 Send an Enquiry</h2>
+      <p>Tell us what you would like stitched and we'll contact you on WhatsApp.</p>
+    </div>
+
+    <form class="enquiry-form" id="enquiryForm">
+
+      <div class="form-grid">
+
+        <div class="form-group">
+          <label for="customerName">Your Name *</label>
+          <input
+            type="text"
+            id="customerName"
+            placeholder="Enter your name"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="customerPhone">Phone Number *</label>
+          <input
+            type="tel"
+            id="customerPhone"
+            placeholder="Enter your phone number"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+  <label for="service">What do you want stitched? *</label>
+  <select id="service" required>
+    <option value="">Select a service</option>
+    <option>Rajputi Suit</option>
+    <option>Salwar Suit</option>
+    <option>Sari Blouse</option>
+    <option>Traditional Poshak</option>
+    <option>Bridal Wear</option>
+    <option>Other Ladies Wear</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="requiredDate">Required Date</label>
+  <input
+    type="date"
+    id="requiredDate"
+    min="2026-09-17"
+  >
+</div>
+
+<div class="form-group">
+  <label for="customerPlace">Your City / Location *</label>
+  <input
+    type="text"
+    id="customerPlace"
+    placeholder="Example: Pali, Rajasthan"
+    required
+  >
+</div>
+
+<div class="form-group">
+  <label for="measurements">Measurements</label>
+  <select id="measurements">
+    <option value="">Select an option</option>
+    <option>I already have my measurements</option>
+    <option>I need help taking measurements</option>
+    <option>I will visit the shop for measurements</option>
+  </select>
+        </div>
+</div>
+        
+        <div class="form-group full-width">
+          <label for="requirements">Design / Stitching Requirements</label>
+          <textarea
+            id="requirements"
+            placeholder="Example: Neck design, sleeve style, fitting preference, special design, etc."
+          ></textarea>
+        </div>
+
+      </div>
+
+      <div class="form-note">
+        📱 Your enquiry will open WhatsApp with the details you entered.
+        Please check the message before sending it.
+      </div>
+
+      <div class="enquiry-submit">
+        <button type="submit" class="btn">
+          💬 Send Enquiry on WhatsApp
+        </button>
+      </div>
+
+    </form>
+
+  </div>
+</section>
+<!-- CONTACT -->
+<section id="contact">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Contact Us</h2>
+            <p>Visit us or contact us for your stitching requirements.</p>
+        </div>
+
+        <div class="contact-grid">
+
+            <!-- LEFT: CONTACT INFORMATION -->
+            <div class="contact-info">
+
+                <h3>Visit Maa Laxmi Tailoring Shop</h3>
+
+                <p>
+                    <strong>📍 Address</strong><br>
+                    Karni Nagar, Pali, Rajasthan
+                </p>
+
+                <p>
+                    <strong>📞 Phone / WhatsApp</strong><br>
+                    7615966033
+                </p>
+
+                <p>
+                    <strong>🕐 Opening Hours</strong><br>
+                    Monday to Sunday: 9:00 AM – 8:00 PM
+                </p>
+
+                <a
+                    class="btn directions-btn"
+                    href="https://www.google.com/maps/dir/?api=1&destination=25.8099163%2C73.3338153"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    📍 Get Directions
+                </a>
+
+            </div>
+
+
+            <!-- RIGHT: MAP + EXISTING CONTACT BUTTONS -->
+            <div class="contact-card">
+
+                <h3>Find Us on Google Maps</h3>
+
+                <p>
+                    You can view our location on Google Maps and get
+                    directions directly from your phone.
+                </p>
+
+                <div class="map-box">
+                    <iframe
+                        src="https://www.google.com/maps?q=25.8099163,73.3338153&output=embed"
+                        loading="lazy"
+                        allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Maa Laxmi Tailoring Shop location">
+                    </iframe>
+                </div>
+
+                <a
+                    class="btn"
+                    href="https://wa.me/917615966033?text=Namaste%20Maa%20Laxmi%20Women's%20Tailoring%20Shop%2C%20I%20would%20like%20to%20enquire%20about%20stitching."
+                    target="_blank"
+                    rel="noopener"
+                >
+                    💬 WhatsApp Us
+                </a>
+
+                <a
+                    class="btn"
+                    href="tel:+917615966033"
+                >
+                    📞 Call Now
+                </a>
+
+            </div>
+
+        </div>
+    </div>
 </section>
 </main>
 
@@ -1012,6 +1743,52 @@ navMenu.classList.remove("open");
 // Automatically show the current year
 document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+<script>
+    const dateInput = document.getElementById("requiredDate");
 
+dateInput.addEventListener("click", function() {
+  if (this.showPicker) {
+    this.showPicker();
+  }
+});
+document.getElementById("enquiryForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("customerName").value.trim();
+  const phone = document.getElementById("customerPhone").value.trim();
+  const place = document.getElementById("customerPlace").value.trim();
+  const service = document.getElementById("service").value;
+  const date = document.getElementById("requiredDate").value;
+  const measurements = document.getElementById("measurements").value;
+  const requirements = document.getElementById("requirements").value.trim();
+
+  let message =
+    "Namaste Maa Laxmi Women's Tailoring Shop! 👋\n\n" +
+    "I would like to send an enquiry.\n\n" +
+    "👩 Name: " + name + "\n" +
+    "📱 Phone: " + phone + "\n" +
+    "🏙 Place: " + place + "\n" +
+    "👗 Service: " + service + "\n";
+
+  if (date) {
+    message += "📅 Required Date: " + date + "\n";
+  }
+
+  if (measurements) {
+    message += "📏 Measurements: " + measurements + "\n";
+  }
+
+  if (requirements) {
+    message += "🧵 Requirements: " + requirements + "\n";
+  }
+
+  message += "\nThank you!";
+
+  const whatsappURL =
+    "https://wa.me/917615966033?text=" + encodeURIComponent(message);
+
+  window.open(whatsappURL, "_blank");
+});
+</script>
 </body>
 </html>

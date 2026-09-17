@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Measurement Guide | Maa Laxmi Women's Tailoring Shop</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --maroon:#741f2b;
+    --dark-maroon:#45121b;
+    --gold:#d6a34a;
+    --cream:#fff8eb;
+    --light-cream:#f5e6cb;
+    --text:#3d2925;
+    --muted:#735e55;
+    --white:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+    background:var(--cream);
+    color:var(--text);
+    line-height:1.7;
+}
+
+.container{
+    width:min(1100px,92%);
+    margin:auto;
+}
+
+/* HEADER */
+header{
+    background:var(--dark-maroon);
+    padding:16px 0;
+}
+
+.header-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.logo{
+    color:var(--gold);
+    font-family:"Cormorant Garamond",serif;
+    font-size:28px;
+    font-weight:700;
+    text-decoration:none;
+}
+
+.back-link{
+    color:white;
+    text-decoration:none;
+    border:1px solid rgba(255,255,255,.4);
+    padding:9px 16px;
+    border-radius:30px;
+    font-size:14px;
+}
+
+.back-link:hover{
+    background:var(--gold);
+    color:var(--dark-maroon);
+}
+
+/* HERO */
+.hero{
+    background:linear-gradient(rgba(69,18,27,.88),rgba(69,18,27,.88)),
+    url("images/measurement-guide.jpg") center/cover;
+    color:white;
+    text-align:center;
+    padding:75px 20px;
+}
+
+.hero h1{
+    font-family:"Cormorant Garamond",serif;
+    font-size:clamp(42px,7vw,68px);
+    color:white;
+    margin-bottom:10px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    font-size:16px;
+    opacity:.95;
+}
+
+/* INTRO */
+.intro{
+    padding:55px 0 30px;
+    text-align:center;
+}
+
+.intro h2{
+    font-family:"Cormorant Garamond",serif;
+    color:var(--maroon);
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.intro p{
+    max-width:750px;
+    margin:auto;
+    color:var(--muted);
+}
+
+/* MEASUREMENT SECTIONS */
+.measurement-section{
+    padding:35px 0;
+}
+
+.measurement-box{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 8px 25px rgba(69,18,27,.08);
+    border:1px solid rgba(214,163,74,.35);
+}
+
+.measurement-title{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom:15px;
+}
+
+.number{
+    width:45px;
+    height:45px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--maroon);
+    color:white;
+    border-radius:50%;
+    font-weight:600;
+}
+
+.measurement-title h2{
+    font-family:"Cormorant Garamond",serif;
+    color:var(--maroon);
+    font-size:34px;
+}
+
+.measurement-box > p{
+    color:var(--muted);
+    margin-bottom:20px;
+}
+
+.measurement-list{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.measurement-item{
+    background:var(--cream);
+    border-left:4px solid var(--gold);
+    padding:18px;
+    border-radius:10px;
+}
+
+.measurement-item h3{
+    color:var(--dark-maroon);
+    margin-bottom:6px;
+    font-size:18px;
+}
+
+.measurement-item p{
+    color:var(--muted);
+    font-size:14px;
+}
+
+/* TIPS */
+.tips{
+    padding:55px 0;
+}
+
+.tips-box{
+    background:var(--light-cream);
+    border-radius:20px;
+    padding:35px;
+}
+
+.tips-box h2{
+    font-family:"Cormorant Garamond",serif;
+    color:var(--maroon);
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.tips-box ul{
+    padding-left:22px;
+}
+
+.tips-box li{
+    margin-bottom:10px;
+}
+
+/* WHATSAPP */
+.help{
+    margin:20px 0 60px;
+    background:var(--dark-maroon);
+    color:white;
+    text-align:center;
+    padding:40px 25px;
+    border-radius:20px;
+}
+
+.help h2{
+    font-family:"Cormorant Garamond",serif;
+    font-size:38px;
+    margin-bottom:10px;
+    color:var(--gold);
+}
+
+.help p{
+    max-width:650px;
+    margin:0 auto 22px;
+}
+
+.btn{
+    display:inline-block;
+    background:var(--gold);
+    color:var(--dark-maroon);
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+/* FOOTER */
+footer{
+    background:#2d1016;
+    color:#ddd;
+    text-align:center;
+    padding:25px 15px;
+    font-size:14px;
+}
+
+footer strong{
+    color:var(--gold);
+}
+
+/* MOBILE */
+@media(max-width:700px){
+
+    .header-inner{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero{
+        padding:55px 18px;
+    }
+
+    .intro{
+        padding:40px 0 20px;
+    }
+
+    .intro h2{
+        font-size:34px;
+    }
+
+    .measurement-box{
+        padding:22px;
+    }
+
+    .measurement-title h2{
+        font-size:29px;
+    }
+
+    .measurement-list{
+        grid-template-columns:1fr;
+    }
+
+    .tips-box{
+        padding:25px;
+    }
+
+    .help h2{
+        font-size:32px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <div class="container header-inner">
+
+```
+    <a href="index.html" class="logo">
+        Maa Laxmi
+    </a>
+
+    <a href="index.html#measurements" class="back-link">
+        ← Back to Measurement Guide
+    </a>
+
+</div>
+```
+
+</header>
+
+<section class="hero">
+
+```
+<h1>📏 Measurement Guide</h1>
+
+<p>
+    Simple measurement guidance for women's custom-stitched outfits.
+    Proper measurements help us create a comfortable and beautiful fit.
+</p>
+```
+
+</section>
+
+<section class="intro">
+
+```
+<div class="container">
+
+    <h2>How to Take Measurements</h2>
+
+    <p>
+        Use a soft measuring tape and keep it comfortably around the body.
+        Do not pull the tape too tightly or leave it too loose.
+        If you are unsure about any measurement, simply contact us on WhatsApp.
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- BLOUSE -->
+
+<section class="measurement-section">
+
+<div class="container">
+
+<div class="measurement-box">
+
+<div class="measurement-title">
+    <div class="number">01</div>
+    <h2>👗 Blouse Measurements</h2>
+</div>
+
+<p>
+Blouse fitting requires accurate measurements because even a small difference
+can affect the final fit.
+</p>
+
+<div class="measurement-list">
+
+<div class="measurement-item">
+<h3>Full Bust</h3>
+<p>
+Measure around the fullest part of the bust while keeping the tape horizontal.
+</p>
+</div>
+
+<div class="measurement-item">
+<h3>Under Bust</h3>
+<p>
+Measure around the body directly below the bust.
+</p>
+</div>
+
+<div class="measurement-item">
+<h3>Shoulder</h3>
+<p>
+Measure from one shoulder point to the other shoulder point.
+</p>
+</div>
+
+<div class="measurement-item">
+<h3>Armhole</h3>
+<p>
+Measure comfortably around the armhole area according to the required fitting.
+</p>
+</div>
+
+<div class="measurement-item">
+<h3>Sleeve Length</h3>
+<p>
+Measure from the shoulder point to the required sleeve end.
+</p>
+</div>
+
+<div class="measurement-item">
+<h3>Blouse Length</h3>
+<p>
+Measure from the shoulder near the neck down to the desired blouse length.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SALWAR SUIT -->
+
+<section class="measurement-section">
+
+<div class="container">
+
+<div class="measurement-box">
+
+<div class="measurement-title">
+    <div class="number">02</div>
+    <h2>🧵 Salwar Suit Measurements</h2>
+</div>
+
+<p>
+For a salwar suit, measurements are generally taken for both the upper garment
+and the lower garment.
+</p>
+
+<div class="measurement-list">
+
+<div class="measurement-item">
+<h3>Shoulder</h3>
+<p>
+Measure across the shoulders from one shoulder point to the other.
+</p>
+</div>
+
+<div class="measurement-item">
+<h3>Bust</h3>
+<p>
+Measure around the fullest part of the bust.
+</p>
+</div>
+
+<div class="measurement-item">
+<h3>Waist</h3>
+<p>
+Measure around the natural waist area without pulling the tape tightly.
+</p>
+</div>
+
+<div class="measurement-item">
+<h3>Hip</h3>
+<p>
+Measure around the fullest part of the hips.
+</p>
+</div>
+
+<div class="measurement-item">
+<h3>Kurti Length</h3>
+<p>
+Measure from the shoulder to the desired length of the kurti.
+</p>
+</div>
+
+<div class="measurement-item">
+<h3>Salwar / Pant Length</h3>
+<p>
+Measure from the waistline to the required bottom length.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- POSHAK -->
+
+<section class="measurement-section">
+
+<div class="container">
+
+<div class="measurement-box">
+
+<div class="measurement-title">
+    <div class="number">03</div>
+    <h2>👘 Traditional Poshak Measurements</h2>
+</div>
+
+<p>
+Traditional Rajasthani poshak may require measurements for the blouse,
+ghagra and other parts according to the design.
+</p>
+
+<div class="measurement-list">
+
+<div class="measurement-item">
+<h3>Blouse Measurements</h3>
+<p>
+Bust, under bust, shoulder, armhole, sleeve and blouse length may be required.
+</p>
+</div>
+
+<div class="measurement-item">
+<h3>Waist</h3>
+<p>
+Measure around the waist where the ghagra or skirt will sit.
+</p>
+</div>
+
+<div class="measurement-item">
+<h3>Ghagra Length</h3>
+<p>
+Measure from the waistline to the required bottom length.
+</p>
+</div>
+
+<div class="measurement-item">
+<h3>Waist Circumference</h3>
+<p>
+Take the complete measurement around the waist for proper fitting.
+</p>
+</div>
+
+<div class="measurement-item">
+<h3>Dupatta Preference</h3>
+<p>
+Mention the preferred length, style and finishing requirements.
+</p>
+</div>
+
+<div class="measurement-item">
+<h3>Fitting Preference</h3>
+<p>
+Tell us whether you prefer a comfortable, regular or closer fitting.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- BRIDAL -->
+
+<section class="measurement-section">
+
+<div class="container">
+
+<div class="measurement-box">
+
+<div class="measurement-title">
+    <div class="number">04</div>
+    <h2>💍 Bridal Wear Measurements</h2>
+</div>
+
+<p>
+Bridal outfits usually require more detailed measurements and may need
+trial fitting before the final finishing.
+</p>
+
+<div class="measurement-list">
+
+<div class="measurement-item">
+<h3>Detailed Body Measurements</h3>
+<p>
+Accurate measurements are taken according to the design and outfit.
+</p>
+</div>
+
+<div class="measurement-item">
+<h3>Blouse Fitting</h3>
+<p>
+Bust, under bust, shoulder, armhole, sleeve and length may be required.
+</p>
+</div>
+
+<div class="measurement-item">
+<h3>Waist</h3>
+<p>
+Measure the waist according to where the bridal outfit will sit.
+</p>
+</div>
+
+<div class="measurement-item">
+<h3>Length Measurements</h3>
+<p>
+Garment length is measured according to the desired design and footwear.
+</p>
+</div>
+
+<div class="measurement-item">
+<h3>Sleeve Preference</h3>
+<p>
+Mention the desired sleeve length and style.
+</p>
+</div>
+
+<div class="measurement-item">
+<h3>Trial Fitting</h3>
+<p>
+A trial fitting can help identify adjustments before final finishing.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TIPS -->
+
+<section class="tips">
+
+<div class="container">
+
+<div class="tips-box">
+
+<h2>📌 Important Measurement Tips</h2>
+
+<ul>
+
+<li>Use a soft measuring tape.</li>
+
+<li>Stand naturally while taking measurements.</li>
+
+<li>Keep the tape comfortably against the body.</li>
+
+<li>Do not pull the tape extremely tight.</li>
+
+<li>Wear normal clothing while taking measurements.</li>
+
+<li>For fitted outfits, tell your tailor your preferred fitting style.</li>
+
+<li>For bridal and special outfits, a trial fitting may be helpful.</li>
+
+<li>If you are unsure, contact us before taking the measurements yourself.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- HELP -->
+
+<section class="help">
+
+<div class="container">
+
+<h2>Need Help With Measurements?</h2>
+
+<p>
+Don't worry if you are not sure how to take a particular measurement.
+Send us a WhatsApp message and we can guide you about the measurements
+required for your outfit.
+</p>
+
+<a
+class="btn"
+href="https://wa.me/917615966033?text=Namaste%20Maa%20Laxmi%20Tailoring%20Shop%2C%20I%20need%20help%20with%20taking%20measurements%20for%20my%20outfit."
+target="_blank"
+rel="noopener">
+💬 Ask on WhatsApp </a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© <span id="year"></span>
+<strong>Maa Laxmi Women's Tailoring Shop</strong>.
+All rights reserved.
+</p>
+
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
